@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.6">
+    <title>Newsletter signup</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="./css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <form class="form-signin form-cont" action="/" method="POST">
+        <div class="text-center">
+            <img class="mb-4 mt-3" src="./images/news_letter.svg" alt="" width="54" height="54">
+            <h1 class="h4 mb-5 font-weight-bold">Signup to my newsletter</h1>
+        </div>
+
+        <div class="form-label-group">
+            <input type="text" name="firstName" id="firstNameInput" class="form-control" placeholder="First name"
+                required autofocus>
+            <label for="firstNameInput">First name</label>
+        </div>
+
+        <div class="form-label-group">
+            <input type="text" name="lastName" id="lastNameInput" class="form-control" placeholder="Last name" required>
+            <label for="lastNameInput">Last name</label>
+        </div>
+
+        <div class="form-label-group mb-3">
+            <input type="email" name="emailAddress" id="emailInput" class="form-control" placeholder="Email address"
+                required>
+            <label for="emailInput">Email address</label>
+        </div>
+        <button class="btn btn-lg btn-primary btn-block signup-btn" type="submit">Sign me up!</button>
+        <p class="text-muted text-center copy-text">&copy; 2020 Soumya Dey</p>
+    </form>
+</body>
+
+</html>

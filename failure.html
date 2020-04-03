@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Failure</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+        }
+
+        .display-4 {
+            font-weight: 500;
+            margin-bottom: 14px;
+        }
+
+        .lead{
+            margin-bottom: 24px;
+        }
+
+        .btn-warning{
+            color: white;
+            font-weight: 500;
+            margin-top: 12px;
+            transition: all 0.2s ease;
+        }
+        .btn-warning:hover{
+            color: white;
+            font-weight: 500;
+            transform: translateY(1px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">Uh oh!</h1>
+            <p class="lead">There's a problem signing you up. Please try again by clicking the button below.</p>
+
+            <hr>
+
+            <form action="/failure" method="post">
+                <button type="submit" class="btn btn-lg btn-warning">Try again</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

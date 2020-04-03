@@ -1,0 +1,15 @@
+{
+  "name": "newsletter_signup_website",
+  "version": "1.0.0",
+  "description": "a newsletter signup website made with mailchimp",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Soumya Dey",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
