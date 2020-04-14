@@ -4,7 +4,9 @@ const https = require("https");
 
 const app = express();
 
+// static folder for storing static local resources
 app.use(express.static("static"));
+// for accessing the request body that is sent to us
 app.use(express.urlencoded({ extended: true }));
 
 app.get("/", (req, res) => {
@@ -40,6 +42,8 @@ app.post("/", (req, res) => {
             res.sendFile(path.join(__dirname, "/failure.html"));
         }
     });
+
+    // actually writing the data to mailchimp
     request.write(userData);
     request.end();
 });
@@ -48,6 +52,7 @@ app.post('/failure', (req, res) => {
     res.redirect('/');
 })
 
+// listining to the dynamic port if available, otherwise to port 3000 in localhost
 app.listen(process.env.PORT || 3000, () => console.log("Server running successfully."));
 
 // mailchimp api: 68f98417fbd88ab360d68e5e431e3aa3-us19
